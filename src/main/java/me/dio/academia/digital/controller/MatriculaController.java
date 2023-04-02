@@ -22,8 +22,8 @@ public class MatriculaController {
     }
 
     @GetMapping
-    public List<Matricula> recuperarMatriculas() {
-        return service.getAll();
+    public List<Matricula> recuperarMatriculas(@RequestParam(value = "bairro", required = false) String bairro) {
+        return service.getAll(bairro);
     }
 
 }
