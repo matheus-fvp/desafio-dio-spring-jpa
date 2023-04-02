@@ -10,3 +10,9 @@ spring:
     properties:
       hibernate.format.sql: true
 
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
